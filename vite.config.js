@@ -7,8 +7,21 @@ import { devHtmlTransformer, prodHtmlTransformer } from '@meituan-nocode/vite-pl
 import react from '@vitejs/plugin-react';
 
 const isProdEnv = process.env.NODE_ENV === 'production';
-const PUBLIC_PATH = isProdEnv ? process.env.PUBLIC_PATH + '/' + process.env.CHAT_VARIABLE : process.env.PUBLIC_PATH;
-const OUT_DIR = isProdEnv ? 'build/' + process.env.CHAT_VARIABLE : 'build';
+// Compute a safe base path to avoid generating protocol-relative URLs like `//assets/...`
+function computeBase() {
+  if (!isProdEnv) {
+    return process.env.PUBLIC_PATH || '/';
+  }
+  const parts = [process.env.PUBLIC_PATH, process.env.CHAT_VARIABLE].filter(Boolean);
+  let base = parts.join('/');
+  // Collapse multiple slashes to a single slash
+  base = base.replace(/\/+/g, '/');
+  if (!base.startsWith('/')) base = '/' + base;
+  if (!base.endsWith('/')) base += '/';
+  return base;
+}
+const BASE = computeBase();
+const OUT_DIR = isProdEnv && process.env.CHAT_VARIABLE ? `build/${process.env.CHAT_VARIABLE}` : 'build';
 const PLUGINS = isProdEnv ? [
   react(),
   prodHtmlTransformer(process.env.CHAT_VARIABLE)
@@ -33,7 +46,7 @@ export default defineConfig({
   plugins: [
     PLUGINS
   ],
-  base: PUBLIC_PATH,
+  base: BASE,
   build: {
     outDir: OUT_DIR
   },

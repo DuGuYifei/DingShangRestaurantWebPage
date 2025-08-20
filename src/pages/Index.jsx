@@ -401,7 +401,7 @@ const Index = () => {
               
               <div className="rounded-xl overflow-hidden shadow-lg">
                 <img 
-                  src="/images/cantingjingzi.jpg"
+                  src={`${import.meta.env.BASE_URL}images/cantingjingzi.jpg`}
                   alt="Restaurant Location Map" 
                   className="w-full h-64 object-cover mx-auto"
                 />

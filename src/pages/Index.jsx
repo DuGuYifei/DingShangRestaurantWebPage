@@ -291,7 +291,7 @@ const Index = () => {
       {/* Hero Section */}
       <div className="relative h-96">
         <img 
-          src="/images/cantingdatang.jpg"
+          src={`${import.meta.env.BASE_URL}images/cantingdatang.jpg`}
           alt="Restaurant Interior" 
           className="w-full h-full object-cover"
         />
@@ -308,7 +308,7 @@ const Index = () => {
         <div className="mb-8 text-center space-y-4">
           <h2 className="text-3xl font-bold text-red-800">Unsere Speisekarte</h2>
           <a
-            href="/menu.pdf"
+            href={`${import.meta.env.BASE_URL}menu.pdf`}
             target="_blank"
             rel="noopener"
             className="inline-flex items-center px-4 py-2 rounded-full bg-red-800 text-white hover:bg-red-700 shadow-md"
@@ -341,7 +341,7 @@ const Index = () => {
           {filteredItems.map((item) => (
             <div key={item.id} className="bg-white rounded-xl shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105">
               <img 
-                src={item.image} 
+                src={`${import.meta.env.BASE_URL}${item.image.replace(/^\//, '')}`} 
                 alt={item.name} 
                 className="w-full h-48 object-cover mx-auto"
               />

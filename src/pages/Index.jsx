@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 const Index = () => {
   // Menu categories
-  const categories = ['Alle', 'Suppen', 'Vorspeisen', 'Vegetarische Gerichte', 'Hühnerfleisch', 'Entenfleisch', 'Schweinefleisch', 'Rind- und Lammfleisch', 'Trocken Wok', 'Meeresfrüchte', 'Dessert'];
+  const categories = ['Alle', 'Suppen', 'Vorspeisen', 'Vegetarische Gerichte', 'Hühnerfleisch', 'Entenfleisch', 'Schweinefleisch', 'Rind- und Lammfleisch', 'Trocken Wok', 'Meeresfrüchte', 'Dessert', 'Speziell Empfehlung'];
   const [activeCategory, setActiveCategory] = useState('Alle');
 
   // Menu data with categories
@@ -26,26 +26,27 @@ const Index = () => {
     {
       id: 3,
       name: "明炉羊肉",
-      description: "",
-      price: "€0,00",
+      description: "Lammfleisch Suppe mit Glasnudeln und Chinakohl. leicht scharf",
+      price: "€23,90",
       image: "/images/mingluyangrou.jpg",
-      category: "Rind- und Lammfleisch"
+      category: "Speziell Empfehlung"
     },
     {
       id: 4,
-      name: "香辣蟹",
-      description: "",
-      price: "€0,00",
+      name: "葱姜,香辣蟹",
+      description: "Gebratene Krabbe mit Schnittlauch Ingwer/ oder\n" +
+          " nach Sichan-Art, leicht scharf",
+      price: "€22,90",
       image: "/images/xianglaxie.jpg",
-      category: "Meeresfrüchte"
+      category: "Speziell Empfehlung"
     },
     {
       id: 5,
       name: "香辣海瓜子",
-      description: "",
-      price: "€0,00",
+      description: "Gebratene Muscheln nach Sichan-Art, leicht scharf",
+      price: "€18,90",
       image: "/images/xianglahaiguazi.jpg",
-      category: "Meeresfrüchte"
+      category: "Speziell Empfehlung"
     },
     {
       id: 6,
@@ -74,10 +75,10 @@ const Index = () => {
     {
       id: 9,
       name: "扫把茄子",
-      description: "",
-      price: "€0,90",
+      description: "Aubergine Spezial mit Hackfleisch und Peperocini. leicht scharf",
+      price: "€17,90",
       image: "/images/saobaqiezi.jpg",
-      category: "Schweinefleisch"
+      category: "Speziell Empfehlung"
     },
     {
       id: 10,
@@ -90,16 +91,16 @@ const Index = () => {
     {
       id: 11,
       name: "韭菜干丝",
-      description: "",
-      price: "€0,00",
+      description: "Chinesisch Schnittlauch mit Trockenen Tofu",
+      price: "€16,90",
       image: "/images/jiucaigansi.jpg",
-      category: "Vegetarische Gerichte"
+      category: "Speziell Empfehlung"
     },
     {
       id: 12,
       name: "清蒸多宝鱼",
-      description: "",
-      price: "€0,00",
+      description: "Gedämpft Steinbuttfisch",
+      price: "€29,90",
       image: "/images/qingzhengduobaoyu.jpg",
       category: "Meeresfrüchte"
     },
@@ -122,18 +123,18 @@ const Index = () => {
     {
       id: 15,
       name: "猪肉粉条",
-      description: "",
-      price: "€0,90",
+      description: "Gekochte Schweinebauch mit Rotkartoffelnudeln und Chinakoh",
+      price: "€21,90",
       image: "/images/zhuroufentiao.jpg",
-      category: "Schweinefleisch"
+      category: "Speziell Empfehlung"
     },
     {
       id: 16,
       name: "鸭血肥肠",
-      description: "",
-      price: "€0,90",
+      description: "Gekochte Ente Blut mit Schweine Darm, scharf",
+      price: "€19,90",
       image: "/images/yaxuefeichang.jpg",
-      category: "Schweinefleisch"
+      category: "Speziell Empfehlung"
     },
     {
       id: 17,
@@ -146,10 +147,10 @@ const Index = () => {
     {
       id: 18,
       name: "毛血旺",
-      description: "",
-      price: "€0,90",
+      description: "Sichuan Specialtät, sehr scharf",
+      price: "€22,90",
       image: "/images/maoxuewang.jpg",
-      category: "Schweinefleisch"
+      category: "Speziell Empfehlung"
     },
     {
       id: 19,
@@ -161,14 +162,6 @@ const Index = () => {
     },
     {
       id: 20,
-      name: "铁板气球鸭",
-      description: "Aufgeblasene Ente auf der heißen Platte",
-      price: "€24,90",
-      image: "/images/tiebanqiqiuya.jpg",
-      category: "Entenfleisch"
-    },
-    {
-      id: 21,
       name: "火烧冰淇淋",
       description: "Gebackene Feuer Eis",
       price: "€7,50",
@@ -176,7 +169,7 @@ const Index = () => {
       category: "Entenfleisch"
     },
     {
-      id: 22,
+      id: 21,
       name: "草包牛肉",
       description: "Rindfleisch-Salat mit Gemüsestreifen, Koriander und Chilis",
       price: "€12,90",
@@ -184,7 +177,7 @@ const Index = () => {
       category: "Vorspeisen"
     },
     {
-      id: 23,
+      id: 22,
       name: "杏仁鸡排",
       description: "Gebackenes Hühnerbrustfilet paniert mit Mandeln und süß sauer Soße",
       price: "€18,90",
@@ -192,7 +185,7 @@ const Index = () => {
       category: "Hühnerfleisch"
     },
     {
-      id: 24,
+      id: 23,
       name: "功夫汤",
       description: "Kung Fu Suppe, mit Hühnerbrust und Gemüse",
       price: "€4,90",
@@ -200,7 +193,7 @@ const Index = () => {
       category: "Suppen"
     },
     {
-      id: 25,
+      id: 24,
       name: "干锅排骨",
       description: "Trocken gebratene Schweine Rippchen",
       price: "€16,90",
@@ -208,7 +201,7 @@ const Index = () => {
       category: "Trocken Wok"
     },
     {
-      id: 26,
+      id: 25,
       name: "鼎尚拼盘",
       description: "Dingshang Vorspeise platte (Mini-rollen, Wan-tan, Garnelen und Hühnerstücke)",
       price: "€9,90",
@@ -216,7 +209,7 @@ const Index = () => {
       category: "Vorspeisen"
     },
     {
-      id: 27,
+      id: 26,
       name: "干锅鱿鱼须",
       description: "Trocken gebratene Tintenfisch-Tentakel",
       price: "€18,90",
@@ -224,7 +217,7 @@ const Index = () => {
       category: "Trocken Wok"
     },
     {
-      id: 28,
+      id: 27,
       name: "干锅双花",
       description: "Trocken gebratener Brokkoli und Blumenkohl",
       price: "€15,90",
@@ -232,7 +225,7 @@ const Index = () => {
       category: "Trocken Wok"
     },
     {
-      id: 29,
+      id: 28,
       name: "鱼香茄子",
       description: "Gebratene Aubergine nach Sichuan-Art, leicht scharf",
       price: "€13,90",
@@ -240,7 +233,7 @@ const Index = () => {
       category: "Vegetarische Gerichte"
     },
     {
-      id: 30,
+      id: 29,
       name: "泰咖喱鸡",
       description: "Gebratenes Hühnerfilet mit Gemüse, rotem Curry und Kokosmilch",
       price: "€16,90",
@@ -248,7 +241,7 @@ const Index = () => {
       category: "Hühnerfleisch"
     },
     {
-      id: 31,
+      id: 30,
       name: "口水鸡",
       description: "Hähnchenkeulen mit Gurken, Koriander und Erdnüsse",
       price: "€9,90",
@@ -256,7 +249,7 @@ const Index = () => {
       category: "Vorspeisen"
     },
     {
-      id: 32,
+      id: 31,
       name: "干锅鸡块",
       description: "Trocken gebratene Hühnerfleisch",
       price: "€17,90",
@@ -264,7 +257,7 @@ const Index = () => {
       category: "Trocken Wok"
     },
     {
-      id: 33,
+      id: 32,
       name: "炸香蕉 冰激凌",
       description: "Gebackene Banane mit Eis",
       price: "€7,90",
@@ -272,7 +265,7 @@ const Index = () => {
       category: "Dessert"
     },
     {
-      id: 34,
+      id: 33,
       name: "家常豆腐",
       description: "Gebratener Tofu mit Gemüse",
       price: "€14,90",
@@ -289,9 +282,9 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-gradient-to-b from-red-50 to-amber-50">
       {/* Hero Section */}
-      <div className="relative h-96">
+      <div className="relative h-[65vh] md:h-[80vh] lg:h-[70vh]">
         <img 
-          src={`${import.meta.env.BASE_URL}images/cantingdatang.jpg`}
+          src={`${import.meta.env.BASE_URL}images/dingshangdatingliang.jpg`}
           alt="Restaurant Interior" 
           className="w-full h-full object-cover"
         />
@@ -313,7 +306,7 @@ const Index = () => {
             rel="noopener"
             className="inline-flex items-center px-4 py-2 rounded-full bg-red-800 text-white hover:bg-red-700 shadow-md"
           >
-            Menü öffnen
+            Mehr Menü öffnen
           </a>
         </div>
         

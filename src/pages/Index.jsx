@@ -60,7 +60,7 @@ const Index = () => {
       id: 7,
       name: "松鼠鱼",
       description: "Gebackenes Wolfsbarsch mit süß-sauer-Soße",
-      price: "€16,90",
+      price: "€22,90",
       image: "/images/songshuyu.jpg",
       category: "Meeresfrüchte"
     },
@@ -158,7 +158,7 @@ const Index = () => {
       description: "Aufgeblasene Ente auf der heißen Platte",
       price: "€24,90",
       image: "/images/tiebanqiqiuya.jpg",
-      category: "Schweinefleisch"
+      category: "Entenfleisch"
     },
     {
       id: 20,
@@ -166,7 +166,7 @@ const Index = () => {
       description: "Gebackene Feuer Eis",
       price: "€7,50",
       image: "/images/huoshaobingqilin.jpg",
-      category: "Entenfleisch"
+      category: "Dessert"
     },
     {
       id: 21,
@@ -390,8 +390,8 @@ const Index = () => {
                   </svg>
                   <div>
                     <p className="font-semibold">Öffnungszeiten</p>
-                    <p>Montag - Freitag: 11:30 - 22:00</p>
-                    <p>Samstag - Sonntag: 12:00 - 23:00</p>
+                    <p>Montag, Dienstag: 17:30 – 22:30</p>
+                    <p>Mittwoch – Sonntag: 11:30 – 15:00 und 17:30 – 22:30</p>
                   </div>
                 </div>
               </div>

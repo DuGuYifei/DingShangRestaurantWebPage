@@ -186,9 +186,9 @@ const Index = () => {
     },
     {
       id: 23,
-      name: "功夫汤",
-      description: "Kung Fu Suppe, mit Hühnerbrust und Gemüse",
-      price: "€4,90",
+      name: "冬阴功汤",
+      description: "Tom Yam Gai, mit Garnele, Chili, Zitronengras, Pilze und Koriander (2,11,a,b)",
+      price: "€5,90",
       image: "/images/gongfutang.jpg",
       category: "Suppen"
     },

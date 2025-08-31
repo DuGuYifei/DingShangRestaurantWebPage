@@ -37,4 +37,4 @@ jobs:
           publish_dir: build
           publish_branch: gh-pages
           force_orphan: true
-          cname: dingshang.liuyifei.tech
+          cname: dingshang.de

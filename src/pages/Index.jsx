@@ -326,7 +326,7 @@ const Index = () => {
       description: "Knusprige Ente mit Gemüse Erdnusssoße Soße",
       price: "€19,90",
       image: "/images/huashengya.jpg",
-      category: "Entenfleisc"
+      category: "Entenfleisch"
     },
     {
       id: 41,
@@ -334,7 +334,7 @@ const Index = () => {
       description: "Knusprige Ente mit Gemüse süß-sauer Soße",
       price: "€19,90",
       image: "/images/tiansuanya.jpg",
-      category: "Entenfleisc"
+      category: "Entenfleisch"
     },
     {
       id: 42,
@@ -342,7 +342,7 @@ const Index = () => {
       description: "Knusprige Ente mit Gemüse Sojasoße",
       price: "€18,90",
       image: "/images/shijinya.jpg",
-      category: "Entenfleisc"
+      category: "Entenfleisch"
     }
   ];
 

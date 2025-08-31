@@ -271,6 +271,78 @@ const Index = () => {
       price: "€14,90",
       image: "/images/jiachangdoufu.jpg",
       category: "Vegetarische Gerichte"
+    },
+    {
+      id: 34,
+      name: "蒜蓉菜心",
+      description: "Gebratene Rapsblüten mit Knoblauch",
+      price: "€13,90",
+      image: "/images/suanrongcaixin.jpg",
+      category: "Vegetarische Gerichte"
+    },
+    {
+      id: 35,
+      name: "煎素饺",
+      description: "Gebratene Teigtaschen mit Gemüse, 10 Stück",
+      price: "€11,00",
+      image: "/images/jiansujiao.jpg",
+      category: "Teigtasche"
+    },
+    {
+      id: 36,
+      name: "蒜蓉空心菜",
+      description: "Gebratene Wasserspinat mit Knoblauch",
+      price: "€14,90",
+      image: "/images/suanrongkongxincai.jpg",
+      category: "Vegetarische Gerichte"
+    },
+    {
+      id: 37,
+      name: "泡椒牛肉",
+      description: "Gebratene Rindfleisch mit eingelegten Chilis",
+      price: "€19,90",
+      image: "/images/paojiaoniurou.jpg",
+      category: "Rind- und Lammfleisch"
+    },
+    {
+      id: 38,
+      name: "鸭炒面",
+      description: "Gebratene Nudeln mit Ente",
+      price: "€15,90",
+      image: "/images/yachaomian.jpg",
+      category: "Reis und Nude"
+    },
+    {
+      id: 39,
+      name: "孜然羊肉",
+      description: "Lammfleisch mit Kreuzkümmel",
+      price: "€19,90",
+      image: "/images/ziranyangrou.jpg",
+      category: "Rind- und Lammfleisch"
+    },
+    {
+      id: 40,
+      name: "花生鸭",
+      description: "Knusprige Ente mit Gemüse Erdnusssoße Soße",
+      price: "€19,90",
+      image: "/images/huashengya.jpg",
+      category: "Entenfleisc"
+    },
+    {
+      id: 41,
+      name: "甜酸鸭",
+      description: "Knusprige Ente mit Gemüse süß-sauer Soße",
+      price: "€19,90",
+      image: "/images/tiansuanya.jpg",
+      category: "Entenfleisc"
+    },
+    {
+      id: 42,
+      name: "什锦鸭",
+      description: "Knusprige Ente mit Gemüse Sojasoße",
+      price: "€18,90",
+      image: "/images/shijinya.jpg",
+      category: "Entenfleisc"
     }
   ];
 
